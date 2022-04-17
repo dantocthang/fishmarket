@@ -38,3 +38,48 @@ $(document).ready(function () {
         ]
     });
 });
+
+function countNum(n, arr){
+    let count=0
+    arr.forEach(function(item){
+        if (item==n)
+            count++
+    })
+    return count
+}
+
+function isBeautifulNum(N){
+    const arr=N.toString().split('')
+    // arr.forEach(function(item){
+    //     if (item!=countNum(item)){
+    //         return 0
+    //     }
+    // })
+    for (let i=0; i<arr.length; i++){
+        if (arr[i]!=countNum(arr[i], arr))
+            return 0
+    }
+    return 1
+}
+
+function beautifulNum(N){
+    let result=N+1
+    while (true){
+        let status=false;
+        const arr=result.toString().split('')
+
+        for (let i=0; i<arr.length; i++){
+            if (arr[i]!=countNum(arr[i],arr)){
+                status=false
+                break
+            }
+            status=true
+        }
+
+        if (status) return result
+        else result++
+    }
+}
+
+console.log(beautifulNum(3123442342))
+console.log(isBeautifulNum(2))
