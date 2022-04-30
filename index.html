@@ -12,6 +12,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <title>CaGiong</title>
 </head>
 
@@ -36,6 +37,7 @@
             <div class="header__main">
                 <div class="grid wide">
                     <div class="header__main-inner">
+                        <label for="menu-btn" class="mobile-icon open-icon hide-on-pc"><i class="fa-solid fa-bars"></i></label>
                         <div class="header__logo">
                             <img src="./assets/img/logo.png" alt="Logo" class="header__logo-img">
                         </div>
@@ -97,6 +99,17 @@
                 </div>
             </div>
         </header>
+
+        
+        <input type="checkbox" name="menu-btn" id="menu-btn" hidden>
+        <div class="mobile-header">
+            <label for="menu-btn" class="mobile-icon close-icon"><i class="fa-solid fa-xmark"></i></label>
+            <ul class="mobile-nav">
+                <li class="mobile-nav-item"><a href="/" class="mobile-nav-link">Trang chủ</a></li>
+                <li class="mobile-nav-item"><a href="/" class="mobile-nav-link">Bảng giá</a></li>
+                <li class="mobile-nav-item"><a href="/" class="mobile-nav-link">Đăng nhập</a></li>
+            </ul>
+        </div>
 
         <div class="intro">
             <img src="./assets/img/backgroud.jpg" alt="" class="intro__image" data-aos="zoom-out">
@@ -176,7 +189,7 @@
                                         <span>Đội ngũ hỗ trợ</span>
                                     </li>
                                 </ul>
-                                <button class="intro__btn intro__btn--primary">Explore <i
+                                <button class="intro__btn intro__btn--primary mobile-button">Explore <i
                                         class="fa-solid fa-arrow-right-long"></i></button>
                             </div>
                             <div class="about__graphs">
@@ -209,7 +222,7 @@
                         </li>
                         <li class="products__item col l-3 m-4 c-6">
                             <span class="products__type">Cá nước ngọt</span>
-                            <div class="products__name">Cá lóc</div>
+                            <div class="products__name">Cá lóc Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</div>
                             <div class="product__price">30.000 VND</div>
                             <div class="products__image">
                                 <img src="./assets/img/products/caloc.jpg" alt="" class="products__img">
@@ -295,7 +308,8 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                             <div class="tutorial__item-content">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla expedita dignissimos est odio eveniet voluptatibus voluptas ex quidem iure laboriosam?
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla expedita dignissimos est
+                                odio eveniet voluptatibus voluptas ex quidem iure laboriosam?
                             </div>
                         </li>
                         <li class="tutorial__item" data-aos="flip-down" data-aos-delay="300">
@@ -308,7 +322,8 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                             <div class="tutorial__item-content">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla expedita dignissimos est odio eveniet voluptatibus voluptas ex quidem iure laboriosam?
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla expedita dignissimos est
+                                odio eveniet voluptatibus voluptas ex quidem iure laboriosam?
                             </div>
                         </li>
                         <li class="tutorial__item" data-aos="flip-down" data-aos-delay="600">
@@ -321,7 +336,8 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                             <div class="tutorial__item-content">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla expedita dignissimos est odio eveniet voluptatibus voluptas ex quidem iure laboriosam?
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla expedita dignissimos est
+                                odio eveniet voluptatibus voluptas ex quidem iure laboriosam?
                             </div>
                         </li>
                         <li class="tutorial__item" data-aos="flip-down" data-aos-delay="900">
@@ -334,18 +350,19 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                             <div class="tutorial__item-content">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla expedita dignissimos est odio eveniet voluptatibus voluptas ex quidem iure laboriosam?
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla expedita dignissimos est
+                                odio eveniet voluptatibus voluptas ex quidem iure laboriosam?
                             </div>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
         </div>
 
-        
 
-        <div class="contact" >
+
+        <div class="contact">
             <div class="grid wide">
                 <div class="contact__inner">
                     <ul class="contact__list" data-aos="fade-up">
@@ -448,7 +465,7 @@
                         <div class="footer__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
                             voluptate.</div>
                         <input type="text" class="footer__input" placeholder="Nhập email...">
-                        <button class="intro__btn intro__btn--primary">Explore <i
+                        <button class="intro__btn intro__btn--primary mobile-button">Explore <i
                                 class="fa-solid fa-arrow-right-long"></i></button>
                     </div>
                 </div>

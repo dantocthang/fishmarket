@@ -6,27 +6,27 @@ $(document).ready(function () {
         speed: 600,
         slidesToShow: 3,
         slidesToScroll: 3,
-        prevArrow: '<button class="slider__button next"><i class="fa-solid fa-chevron-right"></i></button>',
-        nextArrow:'<button class="slider__button previous"><i class="fa-solid fa-chevron-left"></i></button>',
+        nextArrow: '<button class="slider__button next"><i class="fa-solid fa-chevron-right"></i></button>',
+        prevArrow: '<button class="slider__button previous"><i class="fa-solid fa-chevron-left"></i></button>',
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1324,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
                     infinite: true,
                     dots: true
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 1000,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 700,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -39,41 +39,41 @@ $(document).ready(function () {
     });
 });
 
-function countNum(n, arr){
-    let count=0
-    arr.forEach(function(item){
-        if (item==n)
+function countNum(n, arr) {
+    let count = 0
+    arr.forEach(function (item) {
+        if (item == n)
             count++
     })
     return count
 }
 
-function isBeautifulNum(N){
-    const arr=N.toString().split('')
+function isBeautifulNum(N) {
+    const arr = N.toString().split('')
     // arr.forEach(function(item){
     //     if (item!=countNum(item)){
     //         return 0
     //     }
     // })
-    for (let i=0; i<arr.length; i++){
-        if (arr[i]!=countNum(arr[i], arr))
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] != countNum(arr[i], arr))
             return 0
     }
     return 1
 }
 
-function beautifulNum(N){
-    let result=N+1
-    while (true){
-        let status=false;
-        const arr=result.toString().split('')
+function beautifulNum(N) {
+    let result = N + 1
+    while (true) {
+        let status = false;
+        const arr = result.toString().split('')
 
-        for (let i=0; i<arr.length; i++){
-            if (arr[i]!=countNum(arr[i],arr)){
-                status=false
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] != countNum(arr[i], arr)) {
+                status = false
                 break
             }
-            status=true
+            status = true
         }
 
         if (status) return result
@@ -83,3 +83,25 @@ function beautifulNum(N){
 
 console.log(beautifulNum(3123442342))
 console.log(isBeautifulNum(2))
+
+
+
+// async function fetchMoviesJSON() {
+//     const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+//     const movies = await response.json();
+//     return movies;
+// }
+// fetchMoviesJSON().then(movies => {
+//     console.log(movies)
+// });
+
+fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(response=>{
+        return response.json()
+    })
+    .then(posts=>{
+        console.log(posts)
+    })
+    .catch(err=>{
+        console.log(err)
+    })
