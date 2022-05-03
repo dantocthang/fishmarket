@@ -1159,6 +1159,8 @@ table {
     border: 1px solid #eff5fa;
 }
 
+
+
 .sidebar__item {
     height: 30px;
 
@@ -1205,7 +1207,7 @@ table {
 #admin-content{
     width: calc(100% - 300px);
     float: right;
-    height: 400vh;
+    height: 100vh;
     transition: all 300ms linear;
 }
 
