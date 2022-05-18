@@ -11,6 +11,7 @@ sidebarBtn.addEventListener('click', function(){
 window.addEventListener('resize', function(){
     if (this.window.innerWidth<=739)
         sidebar.classList.add('minimized')
-    else if (sidebar.classList.contains('minimized'))
-        sidebar.classList.remove('minimized')
+    // else if (sidebar.classList.contains('minimized'))
+    //     sidebar.classList.remove('minimized')
 })
+
