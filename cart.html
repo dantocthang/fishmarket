@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>CaGiong</title>
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header__top">
+                <div class="grid wide">
+                    <div class="header__top">
+                        <div class="header__address">
+                            <i class="fa-solid fa-location-dot header__address-icon"></i>
+                            <span>Khu II, đường 3/2, P. Xuân Khánh, Q. Ninh Kiều, TP. Cần Thơ</span>
+                        </div>
+                        <div class="header__contact">
+                            <i class="fa-solid fa-headphones-simple header__contact-icon"></i>
+                            <span>cagiongcantho@gmail.com</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="header__main">
+                <div class="grid wide">
+                    <div class="header__main-inner">
+                        <label for="menu-btn" class="mobile-icon open-icon hide-on-pc"><i
+                                class="fa-solid fa-bars"></i></label>
+                        <div class="header__logo">
+                            <img src="./assets/img/logo.png" alt="Logo" class="header__logo-img">
+                        </div>
+                        <nav class="header__nav">
+                            <ul class="header__nav-list">
+                                <li class="header__nav-item">
+                                    <a href="" class="header__nav-link">Trang chủ</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a href="" class="header__nav-link">Loại cá</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a href="" class="header__nav-link">Sản phẩm</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a href="" class="header__nav-link">Dịch vụ</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a href="" class="header__nav-link">Hướng dẫn</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__tools">
+                            <a href="/" class="header__tools-item">
+                                <i class="fa-solid fa-magnifying-glass header__tools-icon"></i>
+                            </a>
+                            <div class="header__tools-item">
+                                <i class="fa-solid fa-cart-shopping header__tools-icon"></i>
+                                <div class="header__cart-expand">
+                                    <ul class="header__cart-list">
+                                        <li class="header__cart-item">
+                                            <a href="/" class="header__cart-link">
+                                                <img src="./assets/img/logo.png" alt="" class="header__cart-img">
+                                                <div class="header__cart-name">
+                                                    Ca dat nhat the gioi
+                                                </div>
+                                                <div class="header__cart-quantity">x3</div>
+                                                <div class="header__cart-price">300 USD</div>
+                                            </a>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <a href="/" class="header__cart-link">
+                                                <img src="./assets/img/logo.png" alt="" class="header__cart-img">
+                                                <div class="header__cart-name">
+                                                    Ca dat nhat the gioi
+                                                </div>
+                                                <div class="header__cart-quantity">x3</div>
+                                                <div class="header__cart-price">300 USD</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="/" class="header__tools-item">
+                                <i class="fa-solid fa-user-large header__tools-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <input type="checkbox" name="menu-btn" id="menu-btn" hidden>
+        <div class="mobile-header">
+            <label for="menu-btn" class="mobile-icon close-icon"><i class="fa-solid fa-xmark"></i></label>
+            <ul class="mobile-nav">
+                <li class="mobile-nav-item"><a href="/" class="mobile-nav-link">Trang chủ</a></li>
+                <li class="mobile-nav-item"><a href="/" class="mobile-nav-link">Bảng giá</a></li>
+                <li class="mobile-nav-item"><a href="/" class="mobile-nav-link">Đăng nhập</a></li>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <div class="grid wide">
+                <div class="row d-flex" style="align-items: center; gap: 1rem;">
+                    <div class="cart__home">
+                        <i class="fa-solid fa-house cart__home-icon"></i>
+                    </div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <div class="cart__cart">
+                        Giỏ hàng
+                    </div>
+                </div>
+                <div class="row" style="align-items: center; margin-top: 1rem; margin-bottom: 1.5rem">
+                    <div class="col l-8 m-6 c-12 d-flex justify-content-between">
+                        <div class="cart__heading">Giỏ hàng</div>
+                        <a href="" class="cart__remove">Xóa tất cả</a>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <button class="cart__download">Tải báo giá</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l-8 m-12 c-12">
+                        <div class="cart__grid-header">
+                            <div>Sản phẩm</div>
+                            <div>Đơn giá</div>
+                            <div>Số lượng</div>
+                            <div>Thành tiền</div>
+                        </div>
+
+                        <div class="cart__grid-body">
+                            <div class="cart__product-image">
+                                <img src="./assets/img/logo.png" alt="" class="cart__product-img">
+                            </div>
+                            <div class="cart__product-name">
+                                <span>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Esse hic earum enim doloremque aperiam similique quo nam
+                                    laboriosam dolorem debitis, velit rerum obcaecati tempore repudiandae eligendi sit?
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ipsum magni
+                                    atque.</span>
+                            </div>
+                            <div class="cart__product-price cart_product-number">
+                                500.000 VND
+                            </div>
+                            <div class="cart__product-quantity">
+                                <input type="number" name="quantity" id="quantity">
+                                <a href="/">Xóa</a>
+                            </div>
+                            <div class="cart__product-total cart_product-number">
+                                1.000.000 VND
+                            </div>
+                            <div class="cart__product-image">
+                                <img src="./assets/img/logo.png" alt="" class="cart__product-img">
+                            </div>
+                            <div class="cart__product-name">
+                                <span>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Esse hic earum enim doloremque aperiam similique quo nam
+                                    laboriosam dolorem debitis, velit rerum obcaecati tempore repudiandae eligendi sit?
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ipsum magni
+                                    atque.</span>
+                            </div>
+                            <div class="cart__product-price cart_product-number">
+                                500.000 VND
+                            </div>
+                            <div class="cart__product-quantity">
+                                <input type="number" name="quantity" id="quantity">
+                                <a href="/">Xóa</a>
+                            </div>
+                            <div class="cart__product-total cart_product-number">
+                                1.000.000 VND
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="col l-4 m-12 c-12">
+                        <div class="cart_checkout">
+                            <div class="cart__checkout-heading">
+                                Thanh toán
+                            </div>
+                            <div class="cart__checkout-row">
+                                <div class="cart__checkout-label">
+                                    Thành tiền:
+                                </div>
+                                <div class="cart__checkout-price">2.000.000 đ</div>
+
+                            </div>
+                            <div class="cart__checkout-vat">(Đã bao gồm thuế VAT)</div>
+                            <a href="/" class="cart__checkout-btn">
+                                Thanh toán
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="contact">
+            <div class="grid wide">
+                <div class="contact__inner">
+                    <ul class="contact__list" data-aos="fade-up">
+                        <li class="contact__item">
+                            <img src="./assets/img/logo.png" alt="" class="contact__logo">
+                        </li>
+                        <li class="contact__item">
+                            <div class="contact__item-image">
+                                <i class="fa-solid fa-envelope-open-text"></i>
+                            </div>
+                            <div class="contact__item-info">
+                                <div class="contact__item-heading">Email</div>
+                                <div class="contact__item-text">cagiongcantho@gmail.com</div>
+                            </div>
+
+                        </li>
+                        <li class="contact__item">
+                            <div class="contact__item-image">
+                                <i class="fa-solid fa-mobile"></i>
+                            </div>
+                            <div class="contact__item-info">
+                                <div class="contact__item-heading">Call us</div>
+                                <div class="contact__item-text">0379015044</div>
+                            </div>
+                        </li>
+                        <li class="contact__item">
+                            <div class="contact__item-image">
+                                <i class="fa-solid fa-magnifying-glass-location"></i>
+                            </div>
+                            <div class="contact__item-info">
+                                <div class="contact__item-heading">Location</div>
+                                <div class="contact__item-text">3/2 P. Xuân Khánh, Q. Ninh Kiều, Cần Thơ</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="footer__inner" data-aos="fade-up">
+                    <div class="footer__overview">
+                        <div class="footer__heading">Overview</div>
+                        <div class="footer__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ratione
+                            inventore consequatur ipsam! Culpa sequi quas fugit soluta adipisci nulla deserunt impedit
+                            minima, odio repellendus autem quos dignissimos dolor commodi.</div>
+                        <div class="footer__socials">
+                            <ul class="footer__socials-list">
+                                <li class="footer__socials-item">
+                                    <a href="/" class="footer__socials-link">
+                                        <i class="fa-brands fa-google"></i>
+                                    </a>
+                                </li>
+                                <li class="footer__socials-item">
+                                    <a href="/" class="footer__socials-link">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="footer__socials-item">
+                                    <a href="/" class="footer__socials-link">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="footer__socials-item">
+                                    <a href="/" class="footer__socials-link">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__links">
+                        <div class="footer__heading">Quick Links</div>
+                        <ul class="footer__links-list">
+                            <li class="footer__links-item">
+                                <a href="/" class="footer__links-link">
+                                    About us
+                                </a>
+                            </li>
+                            <li class="footer__links-item">
+                                <a href="/" class="footer__links-link">
+                                    Fish type
+                                </a>
+                            </li>
+                            <li class="footer__links-item">
+                                <a href="/" class="footer__links-link">
+                                    All products
+                                </a>
+                            </li>
+                            <li class="footer__links-item">
+                                <a href="/" class="footer__links-link">
+                                    FAQ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__news">
+                        <div class="footer__heading">Newsletter</div>
+                        <div class="footer__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+                            voluptate.</div>
+                        <input type="text" class="footer__input" placeholder="Nhập email...">
+                        <button class="intro__btn intro__btn--primary mobile-button">Explore <i
+                                class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src='./assets/js/script.js'></script>
+</body>
+
+</html>
